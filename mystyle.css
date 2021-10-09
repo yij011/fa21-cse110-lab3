@@ -1,0 +1,162 @@
+/*This is a style sheet for index.html*/
+
+body {
+    /* apply background styles with different color */
+    font-family: Georgia, serif;
+    background-color: lightgoldenrodyellow;
+    margin-left: 10ch;
+}
+
+h1 {
+    /* apply h1 styles with different color and font */
+    font-family: Georgia, serif;
+    font-size: 2.5pc;
+    color: black;
+    background-color: rgb(199, 156, 184);
+    text-align: center;
+}
+
+h2 {
+    /* apply h2 styles with different color and font */
+    font-family: Georgia, serif;
+    font-size: 1.875em;
+    color: #424a52;
+    margin-left: 10px;
+    text-align: left;
+}
+  
+h3 {
+    /* apply h3 styles with different color and font */
+    font-family: Georgia, serif;
+    font-size: 18pt;
+    color: navy;
+    margin-left: 1rem;
+    text-align: left;
+}
+
+div {
+    /* apply box model styles with different color and font */
+    width: 300px;
+    /* longhand of border*/
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    border-color: green;
+    border-width: medium;
+    /* longhand of padding*/
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    /* longhand of margin*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+
+p {
+    /* shorthand of box model elements */
+    font-family: Georgia, serif;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid rgb(61, 9, 158);
+    text-decoration: none;
+}
+
+li {
+    display: inline;
+}
+
+span {
+    display: block;
+}
+
+img {
+    position:relative;
+    left:40px;
+    height: auto;
+    width: 300px;
+    max-width: 1000px;
+    min-width: 10px;
+}
+
+/* pseudo-class */
+a:link {color:#4167e4;}   /* unvisited link */
+a:visited {color:#500b0b;}/* visited link */
+a:hover {color:#f1202a;}  /* when mouse touch link */
+a:active {color:#06691c;} /* actived link */
+
+/* flexible box */
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+/* class selector */
+/* select and style all elements with class="important" */
+p.important
+{
+    background-color: yellow;
+}
+
+#name
+{
+    font-style: italic;
+}
+
+/* universal selector */
+div *
+{
+    background-color: lightskyblue;
+}
+
+/* attribute selector */
+[title=main]
+{
+    color: black;
+}
+
+/* selector list */
+h2,h3
+{
+    background-color: hsl(50,30,70);
+}
+
+/* combinators */
+section ul
+{
+    background-color: lightpink;
+}
+
+/* p after section */
+section>p
+{
+    background-color: rgb(209, 184, 189);
+}
+
+p+form
+{
+    background-color: rgb(229, 234, 240);
+}
+
+summary~ul
+{
+    background-color: lightpink;
+}
