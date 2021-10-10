@@ -1,3 +1,5 @@
+/*Yixin Jiang*/
+/*A16534308*/
 /*This is a style sheet for index.html*/
 
 body {
@@ -130,7 +132,7 @@ div *
 /* attribute selector */
 [title=main]
 {
-    color: black;
+    color: darkblue;
 }
 
 /* selector list */
